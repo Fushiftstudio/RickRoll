@@ -16,7 +16,6 @@
         android:text="Hello Rick!" />
 
 
-
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switchdark"
         android:layout_width="wrap_content"
