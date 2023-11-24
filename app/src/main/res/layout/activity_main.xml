@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/rickroll_4k"
@@ -13,22 +13,35 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:text="Hello Rick!" />
 
 
-    <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/switchdark"
+    <Button
+        android:id="@+id/exit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Normal Mod/WTF MODE" />
-
+        android:layout_centerInParent="true"
+        android:text="exit app"
+        />
 
     <ImageButton
         android:id="@+id/ImageButton"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
         android:src="@drawable/rickpokazeni" />
 
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchdark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ImageButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="center_horizontal"
+        android:text="Normal Mod/WTF MODE"
+        android:textColor="#ffffff" />
 
-</LinearLayout>
+
+</RelativeLayout>
