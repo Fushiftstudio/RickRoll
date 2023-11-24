@@ -23,10 +23,12 @@
         android:layout_marginTop="16dp"
         android:text="Normal Mod/WTF MODE" />
 
-    <RatingBar
-        android:id="@+id/RatingBar"
+
+    <ImageButton
+        android:id="@+id/ImageButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="100dp"
+        android:src="@drawable/rickpokazeni" />
 
 
 </LinearLayout>
